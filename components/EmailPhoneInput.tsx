@@ -87,9 +87,8 @@ export default function EmailPhoneInput() {
       // conditional check for the response
       if (response.ok) {
         setOtp(data.otp);
-  
       } else {
-       console.log('failed to send otp')
+        console.log("failed to send otp");
       }
     } catch (error) {
       console.error("Error sending OTP:", error);
@@ -99,8 +98,6 @@ export default function EmailPhoneInput() {
   // state for setting the data on the onchange in the iinput field
   const [otpInput, setOtpInput] = useState<string>("");
 
-
-
   // Handle OTP input change
   const handleOtpInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setOtpInput(event.target.value);
@@ -108,7 +105,6 @@ export default function EmailPhoneInput() {
 
   // state for saving the data from the backend response
   const [isVerified, setIsVerified] = useState<boolean | null>(null);
-
 
   // handle otp verification to the backend
   const handleEmailOtpVerify = async () => {
@@ -132,7 +128,6 @@ export default function EmailPhoneInput() {
       setIsVerified(false);
     }
   };
-
 
   const handleSendOtp = () => {
     if (recaptchaVerifierRef.current) {
@@ -246,13 +241,14 @@ export default function EmailPhoneInput() {
             </button>
           )}
         </div>
-        {isVerified == true ? (
-          <span className="email_verify_success">
-            Email verified successfully
-          </span>
-        ) : (
-          <span className="email_verify_failed">Email validation failed</span>
-        )}
+        {isVerified !== null &&
+          (isVerified ? (
+            <span className="email_verify_success">
+              Email verified successfully
+            </span>
+          ) : (
+            <span className="email_verify_failed">Email validation failed</span>
+          ))}
 
         {/* phone number verification */}
         <div className="Phone_container">
@@ -283,13 +279,16 @@ export default function EmailPhoneInput() {
             </button>
           )}
         </div>
-        {isVerifiedPhone ? (
-          <span className="Phone_verify_success">
-            Phone verified successfully
-          </span>
-        ) : (
-          <span className="phone_verify_failed">Phone verification failed</span>
-        )}
+        {isVerifiedPhone !== null &&
+          (isVerifiedPhone ? (
+            <span className="Phone_verify_success">
+              Phone verified successfully
+            </span>
+          ) : (
+            <span className="phone_verify_failed">
+              Phone verification failed
+            </span>
+          ))}
 
         <div id="recaptcha-container"></div>
 

@@ -38,7 +38,7 @@ const handlePanCardNumber = (e: React.ChangeEvent<HTMLInputElement>)=> {
 const handleVerifyPan = async()=> {
   try {
     // Send the entire formData to the backend
-    const response = await fetch('https://user-registration-backend-five.vercel.app/verify-pan', { 
+    const response = await fetch('https://user-reg-backend.vercel.app/verify-pan', { 
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

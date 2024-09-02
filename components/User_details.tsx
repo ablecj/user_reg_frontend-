@@ -40,7 +40,7 @@ export default function UserDetails() {
   const handleSaveDetails = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://user-registration-backend-five.vercel.app/validatePhone", {
+      const response = await fetch("https://user-reg-backend.vercel.app/validatePhone", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

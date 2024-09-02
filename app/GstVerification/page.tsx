@@ -32,7 +32,7 @@ export default function Page() {
     const handleVerifyGst = async () => {
         const { gst, email } = gstNumber;
         try {
-          const response = await fetch('https://user-registration-backend-five.vercel.app/verify-gst', {
+          const response = await fetch('https://user-reg-backend.vercel.app/verify-gst', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

@@ -37,7 +37,7 @@ export default function Page() {
 const handleVerifyAadhar = async () => {
     try {
       // Send the entire formData to the backend
-      const response = await fetch('https://user-registration-backend-five.vercel.app/verify-aadhar', { // Corrected URL
+      const response = await fetch('https://user-reg-backend.vercel.app/verify-aadhar', { // Corrected URL
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

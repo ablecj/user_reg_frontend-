@@ -39,7 +39,7 @@ export default function EmailPhoneInput() {
         const storedEmail = sessionStorage.getItem("email");
         if (storedEmail) {
           const response = await fetch(
-            "https://user-registration-backend-five.vercel.app/getUserData",
+            "https://user-reg-backend.vercel.app/getUserData",
             {
               method: "GET",
               headers: {
@@ -73,7 +73,7 @@ export default function EmailPhoneInput() {
   const handleSendEmailOtp = async () => {
     try {
       const response = await fetch(
-        "https://user-registration-backend-five.vercel.app/sendemailotp",
+        "https://user-reg-backend.vercel.app/sendemailotp",
         {
           method: "POST",
           headers: {
@@ -114,7 +114,7 @@ export default function EmailPhoneInput() {
   const handleEmailOtpVerify = async () => {
     try {
       const response = await fetch(
-        "https://user-registration-backend-five.vercel.app/verifyotp",
+        "https://user-reg-backend.vercel.app/verifyotp",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

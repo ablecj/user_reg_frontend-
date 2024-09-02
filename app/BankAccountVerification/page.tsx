@@ -40,7 +40,7 @@ useEffect(() => {
 const handleVerifyBankDetails = async () => {
   try {
     // Send POST request to your backend
-    const response = await fetch('https://user-registration-backend-five.vercel.app/verify-bank-account', {
+    const response = await fetch('https://user-reg-backend.vercel.app/verify-bank-account', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ const handleVerifyBankDetails = async () => {
     setTimeout(async () => {
       const email = AccIfsc.email;
       // Handle the GET request to get the final response
-      const getResponse = await fetch(`https://user-registration-backend-five.vercel.app/get-verification-result?request_id=${result.request_id}&email=${encodeURIComponent(email)}`);
+      const getResponse = await fetch(`https://user-reg-backend.vercel.app/get-verification-result?request_id=${result.request_id}&email=${encodeURIComponent(email)}`);
       const finalResult = await getResponse.json();
       // Set the verification result in state
       setVerificationResult(finalResult[0].result.status);

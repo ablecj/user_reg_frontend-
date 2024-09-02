@@ -41,7 +41,7 @@ export default function Page() {
                 const encodedPincode = encodeURIComponent(formData.pincode);
                 const encodedEmail = encodeURIComponent(formData.email);
 
-                const response = await fetch(`https://user-registration-backend-five.vercel.app/postoffices?pincode=${encodedPincode}&email=${encodedEmail}`, {
+                const response = await fetch(`https://user-reg-backend.vercel.app/postoffices?pincode=${encodedPincode}&email=${encodedEmail}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

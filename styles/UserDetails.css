@@ -1,0 +1,210 @@
+.user_reg_container {
+  width: 50%;
+}
+
+/* name_container */
+.name_Dob_container {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6ecf7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* form_container */
+.form_container {
+  width: 100%;
+  padding: 5px;
+  /* display: flex; */
+}
+
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.register_form_title {
+  margin: 0;
+  font-size: 24px;
+  color: #4a1459;
+}
+
+.name_dob_content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.name_container {
+  width: 50%;
+}
+/* name label */
+.name_container label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #5e1c72;
+}
+/* Name_input */
+.Name_input {
+  width: 70%;
+  height: 30px;
+  border: 1px solid #86479a;
+  border-radius: 5px;
+  margin-left: 5px;
+  padding: 5px;
+}
+.Name_input::placeholder {
+  color: #5e1c72;
+}
+
+/* dob container */
+.DOB_container {
+  width: 50%;
+}
+/* DOB_input */
+.DOB_input {
+  width: 65%;
+  color: #5e1c72;
+  height: 30px;
+  border: 1px solid #86479a;
+  border-radius: 5px;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.DOB_container label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #5e1c72;
+}
+
+/* Email_container */
+.Email_container {
+  width: 100%;
+  display: flex;
+  padding: 5px 0 5px 0;
+}
+.Email_content {
+  width: 50%;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
+
+.Email_content label {
+  color: #5e1c72;
+  margin-right: 5px;
+}
+.Email_content input {
+  height: 30px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #5e1c72;
+  padding: 5px;
+}
+.Email_content input::placeholder {
+  color: #5e1c72;
+}
+.Email_content input:focus {
+  border: 1px solid #5e1c72;
+  outline: none;
+}
+.Email_content button {
+  margin-left: 7px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #5e1c72;
+  color: #fff;
+  background-color: #650283;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/*phone_container  */
+.phone_container {
+  width: 50%;
+  padding: 5px 0 5px 0;
+  display: flex;
+  align-items: center;
+}
+.phone_content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.phone_content label {
+  color: #5e1c72;
+  margin-right: 5px;
+}
+.phone_input {
+  width: 71%;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #5e1c72;
+  outline: none;
+}
+.phone_input::placeholder {
+  color: #5e1c72;
+}
+
+.submit_btn {
+  width: 15%;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #5e1c72;
+  cursor: pointer;
+  border: 1px solid #5e1c72;
+}
+.submit_btn:hover {
+  background-color: #4a1459;
+  opacity: 0.7;
+}
+
+.Error_span {
+  font-size: 14px;
+  color: red;
+  margin-top: 10px;
+}
+
+/* mobile responsive */
+@media only screen and (max-width: 564px) {
+  .user_reg_container {
+    width: 100%;
+  }
+
+  .Name_input {
+    width: 90%;
+   margin: 0;
+  }
+  .DOB_input {
+    width: 90%;
+    margin: 0;
+  }
+  .Email_content input {
+    width: 90%;
+    margin: 0;
+  }
+
+  .phone_input {
+    width: 90%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #5e1c72;
+    outline: none;
+  }
+
+
+
+}

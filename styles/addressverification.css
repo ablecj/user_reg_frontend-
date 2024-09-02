@@ -1,0 +1,136 @@
+.address_verification_container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* address_container */
+.address_container {
+    width: 30%;
+    height: auto;
+    background-color: #f6ecf7;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* address_container title */
+.address_container h1 {
+    margin: 0;
+    color: #4a1459;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* picode_container */
+.pincode_container {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* picode_input */
+.picode_input {
+    width: 35%;
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid #4a1459;
+    outline: none;
+    border-radius: 5px;
+
+}
+.picode_input::placeholder {
+    color: #4a1459;
+}
+/* verify_pin_btn */
+.verify_pin_btn {
+    color: #fff;
+    background-color: #4a1459;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    height: 32px;
+
+}
+/* verify_pin_btn */
+.verify_pin_btn:hover {
+    opacity: 0.7;
+}
+
+/* drop_down_container */
+.drop_down_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Addres_next_btn */
+.Addres_next_btn {
+    width: 20%;
+    height: 35px;
+    color: #fff;
+    background-color: #4a1459;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.Addres_next_btn:hover {
+    opacity: 0.7;
+}
+
+.verify_otp_btn_green {
+    width: auto;
+    height: 35px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(68, 165, 57);
+
+}
+
+/* address_verify_sucess */
+.address_verify_sucess {
+    font-size: 14px;
+    color: green;
+}
+.address_verify_failed {
+    color: red;
+    font-size: 14px;
+    
+}
+
+
+
+/* mobile responsive */
+@media only screen and (max-width: 564px) { 
+    .address_container { 
+        width: 100%;
+    }
+
+    .pincode_container {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        display: flex;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+
+
+
+

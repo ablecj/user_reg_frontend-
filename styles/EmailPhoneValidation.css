@@ -1,0 +1,194 @@
+.email_phone_validation {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* validation_container */
+.validation_container {
+    width: 40%;
+    height: auto;
+    background-color: #f6ecf7;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 0 0.3px rgba(0, 0, 0, 0.9);
+    padding: 20px 0 20px 0;
+    align-items: center;
+}
+/* validation_title */
+.validation_title {
+    width: 100%;
+    height: auto;
+    padding: 5px 0 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.validation_title h1 {
+    margin: 0;
+    color: #5e1c72;
+}
+/* Email_container */
+.Email_container{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* Email_input */
+.Email_input {
+    width: 30%;
+    height: 40px;
+    border: 1px solid #5e1c72;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.Email_input:focus {
+    outline: none;
+}
+.Email_input::placeholder {
+    padding-left: 10px;
+}
+
+.send_otp {
+    width: auto;
+    height: 35px;
+    background-color: #5e1c72;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+.send_otp:hover {
+    opacity: 0.7;
+
+}
+
+.verify_otp_input {
+    width: 30%;
+    height: 40px;
+    border: 1px solid #5e1c72;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.verify_otp_input:focus {
+    outline: none;
+}
+.verify_otp_input::placeholder {
+    color: #5e1c72;
+    padding-left: 10px;
+}
+.verify_otp_btn {
+    width: auto;
+    height: 35px;
+    background-color: #5e1c72;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+.verify_otp_btn:hover {
+    opacity: 0.7;
+}
+
+.verify_otp_btn_green {
+    width: auto;
+    height: 35px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(68, 165, 57);
+    border: none;
+}
+
+/* email_verify_success */
+.email_verify_success{
+    font-size: 14px;
+    color: green;
+
+}
+.email_verify_failed {
+    font-size: 14px;
+    color: red;
+}
+
+/* Phone_container */
+.Phone_container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* phone_input */
+.phone_input_verification {
+    width: 30%;
+    height: 40px;
+    border: 1px solid #5e1c72;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.phone_input_verification:focus {
+    outline: none;
+}
+.phone_input_verification::placeholder {
+    padding-left: 10px;   
+}
+
+/* Phone_verify_success */
+.Phone_verify_success {
+    color: green;
+    font-size: 14px;
+}
+.phone_verify_failed {
+    color: red;
+    font-size: 14px;
+}
+
+
+.Email_ph_verify_nextbtn {
+    width: 25%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #5e1c72;
+    border: none;
+    border-radius: 5px;
+    cursor:  pointer;
+}
+.Email_ph_verify_nextbtn:hover {
+    opacity: 0.7;
+}
+
+/* mobile responsive */
+@media only screen and (max-width: 564px) {
+    .validation_container {
+        width: 100%;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

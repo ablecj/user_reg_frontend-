@@ -116,8 +116,8 @@ export default function Page() {
 
                 {/* Area Name dropdown */}
                 <div className='pincode_container'>
-                    <label htmlFor="officeName">City:</label>
-                    <select id="officeName" value={selectedPostOffice} className='picode_input' onChange={handlePostOfficeSelect}>
+                    <label htmlFor="officeName" className='city_labael'>City:</label>
+                    <select id="officeName" value={selectedPostOffice} className='picode_input1' onChange={handlePostOfficeSelect}>
                         <option value="">Select an area</option>
                         {postOffices.map((office) => (
                             <option key={office.area} value={office.area}>
@@ -135,7 +135,7 @@ export default function Page() {
                         id="districtName"
                         value={districtName}
                         readOnly
-                        className='picode_input'
+                        className='picode_input2'
                     />
                 </div>
 
@@ -147,7 +147,7 @@ export default function Page() {
                         id="stateName"
                         value={stateName}
                         readOnly
-                        className='picode_input'
+                        className='picode_input3'
                     />
                 </div>
 

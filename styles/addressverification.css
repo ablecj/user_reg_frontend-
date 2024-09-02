@@ -52,6 +52,53 @@
 .picode_input::placeholder {
     color: #4a1459;
 }
+
+.city_labael {
+    margin-right: 25px;
+}
+
+/* pincodeinput 1 */
+.picode_input1 {
+    width: 36%;
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid #4a1459;
+    outline: none;
+    border-radius: 5px;
+}
+.picode_input1::placeholder {
+    color: #4a1459;
+}
+/* .picode_input2 */
+.picode_input2 {
+    width: 35%;
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid #4a1459;
+    outline: none;
+    border-radius: 5px;
+}
+.picode_input2::placeholder{
+    color: #4a1459;
+}
+/* pincode input3 */
+.picode_input3 {
+    width: 35%;
+    height: 35px;
+    padding-left: 10px;
+    border: 1px solid #4a1459;
+    outline: none;
+    border-radius: 5px;
+    margin-left: 12px;
+}
+.picode_input3::placeholder{
+    color: #4a1459;
+}
+
+
+
+
+
 /* verify_pin_btn */
 .verify_pin_btn {
     color: #fff;
@@ -63,6 +110,7 @@
     height: 32px;
 
 }
+
 /* verify_pin_btn */
 .verify_pin_btn:hover {
     opacity: 0.7;

@@ -32,7 +32,7 @@ export default function Page() {
     });
   };
 
-  // handle verify pan number
+  // function for verify pan number 
   const handleVerifyPan = async () => {
     try {
       // Send the entire formData to the backend
@@ -46,10 +46,10 @@ export default function Page() {
           body: JSON.stringify(formData),
         }
       );
-
+  
       const result = await response.json();
-
-      if (response.ok && result.exists) {
+  
+      if (response.ok && result.message === 'PAN verified and data saved successfully') {
         setIsVerified(true);
       } else {
         setIsVerified(false);

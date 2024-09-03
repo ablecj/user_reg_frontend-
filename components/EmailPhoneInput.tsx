@@ -39,7 +39,7 @@ export default function EmailPhoneInput() {
         const storedEmail = sessionStorage.getItem("email");
         if (storedEmail) {
           const response = await fetch(
-            "https://user-reg-backend.vercel.app/getUserData",
+            "https://user-reg-backend-git-master-able-c-js-projects.vercel.app/getUserData",
             {
               method: "GET",
               headers: {
@@ -73,7 +73,7 @@ export default function EmailPhoneInput() {
   const handleSendEmailOtp = async () => {
     try {
       const response = await fetch(
-        "https://user-reg-backend.vercel.app/sendemailotp",
+        "https://user-reg-backend-git-master-able-c-js-projects.vercel.app/sendemailotp",
         {
           method: "POST",
           headers: {

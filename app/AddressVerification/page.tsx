@@ -47,7 +47,7 @@ export default function Page() {
         const encodedEmail = encodeURIComponent(formData.email);
 
         const response = await fetch(
-          `https://user-reg-backend.vercel.app/postoffices?pincode=${encodedPincode}&email=${encodedEmail}`,
+          `https://user-reg-backend-git-master-able-c-js-projects.vercel.app/postoffices?pincode=${encodedPincode}&email=${encodedEmail}`,
           {
             method: "GET",
             headers: {

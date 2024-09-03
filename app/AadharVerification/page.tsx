@@ -35,7 +35,7 @@ export default function Page() {
     try {
       // Send the entire formData to the backend
       const response = await fetch(
-        "https://user-reg-backend.vercel.app/verify-aadhar",
+        "https://user-reg-backend-git-master-able-c-js-projects.vercel.app/verify-aadhar",
         {
           // Corrected URL
           method: "POST",

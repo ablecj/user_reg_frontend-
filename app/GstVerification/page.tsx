@@ -34,7 +34,7 @@ export default function Page() {
     const { gst, email } = gstNumber;
     try {
       const response = await fetch(
-        "https://user-reg-backend.vercel.app/verify-gst",
+        "https://user-reg-backend-git-master-able-c-js-projects.vercel.app/verify-gst",
         {
           method: "POST",
           headers: {

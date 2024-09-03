@@ -47,7 +47,7 @@ export default function Page() {
     try {
       // Send POST request to your backend
       const response = await fetch(
-        "https://user-reg-backend.vercel.app/verify-bank-account",
+        "https://user-reg-backend-git-master-able-c-js-projects.vercel.app/verify-bank-account",
         {
           method: "POST",
           headers: {
@@ -64,7 +64,7 @@ export default function Page() {
         const email = AccIfsc.email;
         // Handle the GET request to get the final response
         const getResponse = await fetch(
-          `https://user-reg-backend.vercel.app/get-verification-result?request_id=${
+          `https://user-reg-backend-git-master-able-c-js-projects.vercel.app/get-verification-result?request_id=${
             result.request_id
           }&email=${encodeURIComponent(email)}`
         );
